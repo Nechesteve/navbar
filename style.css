@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+.navbar h1{
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+   }
+   .navbar a{
+    text-decoration: none;
+   }
+
+.top-cointainer {
+    background: url("background\ 13.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-cointainer h1{
+    color: white;
+    font-size: 50px;
+   /* background-color: rgb(190, 190, 236);*/
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text {
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    background: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+   transition: background-color 0.4s;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+   /* color: ;*/
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    color: red;
+}
+.navbar.active{
+    background: black;
+}
+.navbar.active ul li a{
+    color: white;
+}
